@@ -1,5 +1,5 @@
 /*Response Mobile*/
-@media (min-width:350px) and (max-width:768px){
+@media (min-width:350px) and (max-width:800px){
     .contain_img_title_CacauShow{
       height: 27dvh;
     }
@@ -7,10 +7,10 @@
       width: 100%;
     }
     .title_CacauShow h1{
-      font-size: 4.5rem;
+      font-size: 3rem;
     }
     .title_CacauShow p{
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     }
     .title_CacauShow p span{
       font-size: 2.3rem;
@@ -18,9 +18,8 @@
     /*******************************************************/
     .contain_Text{
       width: 100%;
-      height: 45dvh;
-
-      border: solid 1px;
+      height: 43dvh;
+      border: solid;
     }
     .contain_Text div h2{
       font-size: 2.2rem;
@@ -28,6 +27,16 @@
     }
     .contain_Text p{
       font-size: 1.8rem;
+    }
+    /*******************************************************/
+    .carousel{
+      height: 35dvh;
+      border-radius: 45px;
+
+    }
+    .contain_Images_Carousel{
+      height: 30dvh;
+      border-radius: 45px;
     }
     /*******************************************************/
     .contain_findOutMore{
@@ -42,7 +51,7 @@
 
   }
 /*Responsive Tablet*/
-@media (min-width: 768px) and (max-width:1024px){
+@media (min-width: 800px) and (max-width:1020px){
     .contain_img_title_CacauShow{
       height: 27dvh;
     }
@@ -59,25 +68,21 @@
       font-size: 3.3rem;
     }
     /*******************************************************/
-    .contain_Text{
-      width:95%;
-      height: 30dvh;
-      border: solid 1px;
+    .carousel{
+      height: 35dvh;
+      width: 80%;
+      border-radius: 45px;
     }
-    .contain_Text div h2{
-      font-size: 2.9rem;
-      text-align: center;
-    }
-    .contain_Text p{
-      font-size: 2.5rem;
-      text-align: center;
+    .contain_Images_Carousel{
+      height: 35dvh;
+      border-radius: 45px;
     }
     /*******************************************************/
     .contain_findOutMore{
       display: flex;
       justify-content: center;
 
-      margin: 5%;
+      margin-top: 10%;
   }
   .btn_findOutMore{
     width: 90%;
@@ -85,11 +90,15 @@
   }
 /*Responsive Desktop*/
  @media (min-width:1024px) and (max-width:1440px){
+  .contain_img_title_CacauShow{
+    width: 100%;
+    height: 35dvh; 
+  }
   .contain_img_title_CacauShow img{
     width: 100%;
   }
   .title_CacauShow h1{
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
   .title_CacauShow p{
     font-size: 2.7rem;
@@ -98,34 +107,27 @@
     font-size: 3.3rem;
   }
 /*******************************************************/
-
-  .contain_img_title_CacauShow{
-    width: 100%;
-    height: 40dvh; 
-  }
+.contain_Text, .carousel{
+  flex: 1 1 600px;
+}
+/*******************************************************/
   .contain_Text{
-    border: solid 1px;
-    width: 70%;
+    width: 10%;
   }
   .contain_Text div h2{
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     text-align: center;
-    border: solid;
   }
   .contain_Text p{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-align: center; 
-  } 
-/*******************************************************/
- .contain_Btn_Images{
-    width: 70%;
   } 
 /*******************************************************/
   .contain_findOutMore{
   display: flex;
   justify-content: center;
   padding-left: 0px;
-  margin: 1%;
+  margin: 2%;
   }
 .btn_findOutMore{
   width: 70%;

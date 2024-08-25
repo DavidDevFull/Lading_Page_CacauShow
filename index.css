@@ -18,7 +18,7 @@
     --chocolate_Dark:#1F0A06;
     --chocolate:#3f1a03;
     --chocolate_OfCourse:#552203;
-    --cream:#F0D9B5;
+    --cream:#d4b98c;
     --cinza:#2c2c2c;
 }
 *{
@@ -27,7 +27,7 @@
     box-sizing: border-box;
 }
 body{
-  background: linear-gradient(0deg, rgba(240,217,181,1) 0%, rgba(87,36,5,1) 50%, rgba(31,10,6,1) 100%) fixed;
+  background: linear-gradient(0deg, rgb(158, 132, 90) 0%, rgba(87,36,5,1) 50%, rgba(31,10,6,1) 100%) fixed;
   height: 100dvh;
   width: 100%;
   color: white;
@@ -43,12 +43,13 @@ body{
   display: flex;
   align-items: center;
 
-  border: solid ;
+  border:  1px;
 }
 .contain_img_title_CacauShow img{
   z-index: -1;
   position: absolute;
   width: 100%;
+  height: 50dvh;
 }
 .title_CacauShow{
   margin-left: 10%;
@@ -96,27 +97,24 @@ body{
 /*******************************************************/
 .contain_Text_Carousel{
   width: 100%;
-  height: 55dvh;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-  border: solid 1px;
 }
-.contain__Text, .carousel{
+.contain_Text, .carousel{
   flex: 1 1 775px;
 }
 /*******************************************************/
 .contain_Text{
-  width: 40%;
-  height: 35dvh;
+  width: 45%;
 
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+
 }
 .contain_Text div h2{
   font-size: 3rem;
@@ -124,6 +122,8 @@ body{
   font-weight: 400;
   font-style: normal;
   text-align: center;
+
+  border-bottom: dotted 7px ;
   
   color: var(--cream);
 
@@ -160,88 +160,31 @@ body{
 }
 /*******************************************************/
 .carousel{
-  width: 40%;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  border: solid 1px;
+  width: 60%;
+  height: 50dvh;
+  overflow: hidden;
+  border-radius: 45px;
 }
-.contain_Radio_Images{
-  width: 80%;
+.contain_Images_Carousel {
+  width: 300%;
   height: 50dvh;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
 
-  border: solid 1px;
+.contain_Images_Carousel img {
+  width: 100%; 
+  height: 50dvh;
+  margin: 10px;
+
+  border-radius: 45px;
 }
 /*******************************************************/
-.images_Carousel{
-  width: 100%;
-  height: 40dvh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--cream);
-
-  border: solid 1px;
-  
-  /* overflow: hidden; */
-}
-.contain_Radios{
-  width: 15%;
-  border: solid 1px;
-
-  display: flex;
-  justify-content: space-between;
-}
-.contain_Lbls{
-  width: 15%;
-  height: 10dvh;
-  border: solid 1px;
-}
-.contain_Images{
-  border: solid 1px;
-  width: 80%;
-
-  display: flex;
-  /* overflow: hidden; */
-}
-.image_Slider_Show{
-  width: 400px;
-  height: 35vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: solid ;
-}
-.image_Slider_Show img{
-  width: 400px;
-  height: 35vh;
-
-  border: solid ;
-}
-.image_Slider{
-  width: 400px;
-  height: 35vh;
-
-  border: solid 1px;
-}
-.image_Slider img{
-  width: 99%;
-  height: 35dvh;
-
-  border: solid 1px;
-  animation: animation_image_Slider_Show_img 5.5s;
-}
 @keyframes animation_image_Slider_Show_img{
   0%{
     opacity: 0;
@@ -249,22 +192,6 @@ body{
   100%{
     opacity: 1;
   }
-}
-/*******************************************************/
-.image_Slider{
-  width: 700px;
-  height: 35vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  
-  height: 30vh;
-  border: solid 1px;
-}
-.image_Slider img{
-
 }
 /*******************************************************/
 .contain_findOutMore{

@@ -1,19 +1,16 @@
+const imgs = document.getElementById('img'); // Verifique se o id no HTML é 'img'
+const img = document.querySelectorAll('#img img');
 
-let cont = 0
+let idx = 0;
 
-setInterval(function(){
-  lastSlider()
-},1500)
-
-function lastSlider(){
-  cont++
-  if(cont >= 5){
-    cont = 1;
+function carousel() {
+  idx++;
+  if (idx > img.length - 1) {
+    idx = 0;
   }
-  document.getElementById("slider"+cont).checked = true;
-  console.log(cont)
+  // Mova o estilo de transformação para dentro da função
+  imgs.style.transform = `translateX(${-idx * 33.33}%)`; 
 }
 
-
-
-
+// A cada 1800ms, a função 'carousel' será chamada
+setInterval(carousel, 3000);
