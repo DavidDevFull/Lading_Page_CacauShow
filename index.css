@@ -162,6 +162,7 @@ body{
 .carousel{
   width: 60%;
   height: 50dvh;
+  
   overflow: hidden;
   border-radius: 45px;
 }

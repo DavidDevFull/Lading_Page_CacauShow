@@ -14,3 +14,4 @@ function carousel() {
 
 // A cada 1800ms, a função 'carousel' será chamada
 setInterval(carousel, 3000);
+
