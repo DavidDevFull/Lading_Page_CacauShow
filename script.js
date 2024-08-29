@@ -1,17 +1,43 @@
-const imgs = document.getElementById('img'); // Verifique se o id no HTML é 'img'
+const imgs = document.getElementById('img');
 const img = document.querySelectorAll('#img img');
 
 let idx = 0;
+let interval = setInterval(carousel, 3000);
 
 function carousel() {
-  idx++;
-  if (idx > img.length - 1) {
-    idx = 0;
-  }
-  // Mova o estilo de transformação para dentro da função
-  imgs.style.transform = `translateX(${-idx * 33.33}%)`; 
+    idx++;
+    if (idx >= img.length) {
+        idx = 0;
+    }
+    const translateXValue = -(idx * (100 / img.length));
+    imgs.style.transform = `translateX(${translateXValue}%)`; 
 }
 
-// A cada 1800ms, a função 'carousel' será chamada
-setInterval(carousel, 3000);
+imgs.addEventListener('mouseenter', () => {
+    clearInterval(interval);
+});
 
+imgs.addEventListener('mouseleave', () => {
+    interval = setInterval(carousel, 3000);
+});
+
+// Alternar Tema
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+// Carregar Tema
+document.addEventListener('DOMContentLoaded', () => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        body.classList.add('dark-mode');
+    }
+});

@@ -1,134 +1,77 @@
-/*Response Mobile*/
-@media (min-width:350px) and (max-width:800px){
-    .contain_img_title_CacauShow{
-      height: 27dvh;
-    }
-    .contain_img_title_CacauShow img{
-      width: 100%;
-    }
-    .title_CacauShow h1{
+/* Responsivo Mobile */
+@media (min-width: 350px) and (max-width: 800px) {
+  header h1 {
       font-size: 3rem;
-    }
-    .title_CacauShow p{
+  }
+  header p {
       font-size: 1.5rem;
-    }
-    .title_CacauShow p span{
-      font-size: 2.3rem;
-    }
-    /*******************************************************/
-    .contain_Text{
+  }
+  .contain-text {
       width: 100%;
-      height: 43dvh;
-      border: solid;
-    }
-    .contain_Text div h2{
+  }
+  .contain-text div h2 {
       font-size: 2.2rem;
-
-    }
-    .contain_Text p{
+  }
+  .contain-text p {
       font-size: 1.8rem;
-    }
-    /*******************************************************/
-    .carousel{
-      height: 35dvh;
-      border-radius: 45px;
-
-    }
-    .contain_Images_Carousel{
-      height: 30dvh;
-      border-radius: 45px;
-    }
-    /*******************************************************/
-    .contain_findOutMore{
-        display: flex;
-        justify-content: center;
-
-        margin: 5%;
-    }
-    .btn_findOutMore{
+  }
+  .carousel {
+      height: 35vh;
+  }
+  .contain-images-carousel {
+      height: 30vh;
+  }
+  .btn-find-out-more {
       width: 90%;
-    }
   }
-/*Responsive Tablet*/
-@media (min-width: 800px) and (max-width:1020px){
-    .contain_img_title_CacauShow{
-      height: 27dvh;
-    }
-    .contain_img_title_CacauShow img{
-      width: 100%;
-    }
-    .title_CacauShow h1{
-      font-size: 5.5rem;
-    }
-    .title_CacauShow p{
-      font-size: 2.7rem;
-    }
-    .title_CacauShow p span{
-      font-size: 3.3rem;
-    }
-    /*******************************************************/
-    .carousel{
-      height: 35dvh;
-      width: 80%;
-      border-radius: 45px;
-    }
-    .contain_Images_Carousel{
-      height: 35dvh;
-      border-radius: 45px;
-    }
-    /*******************************************************/
-    .contain_findOutMore{
-      display: flex;
-      justify-content: center;
-
-      margin-top: 10%;
-  }
-  .btn_findOutMore{
-    width: 90%;
-  }
-  }
-/*Responsive Desktop*/
- @media (min-width:1024px) and (max-width:1440px){
-  .contain_img_title_CacauShow{
-    width: 100%;
-    height: 35dvh; 
-  }
-  .contain_img_title_CacauShow img{
-    width: 100%;
-  }
-  .title_CacauShow h1{
-    font-size: 4.5rem;
-  }
-  .title_CacauShow p{
-    font-size: 2.7rem;
-  }
-  .title_CacauShow p span{
-    font-size: 3.3rem;
-  }
-/*******************************************************/
-.contain_Text, .carousel{
-  flex: 1 1 600px;
 }
-/*******************************************************/
-  .contain_Text{
-    width: 10%;
+
+/* Responsivo Tablet */
+@media (min-width: 800px) and (max-width: 1020px) {
+  header h1 {
+      font-size: 5.5rem;
   }
-  .contain_Text div h2{
-    font-size: 2.5rem;
-    text-align: center;
+  header p {
+      font-size: 2.7rem;
   }
-  .contain_Text p{
-    font-size: 2.3rem;
-    text-align: center; 
-  } 
-/*******************************************************/
-  .contain_findOutMore{
-  display: flex;
-  justify-content: center;
-  padding-left: 0px;
-  margin: 2%;
+  .carousel {
+      height: 35vh;
+      width: 80%;
   }
-.btn_findOutMore{
-  width: 70%;
+  .contain-images-carousel {
+      height: 35vh;
   }
-}  
+  .btn-find-out-more {
+      width: 90%;
+  }
+}
+
+/* Responsivo Desktop */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .contain-img-title-cacau-show {
+      height: 35vh;
+  }
+  header h1 {
+      font-size: 4.5rem;
+  }
+  header p {
+      font-size: 2.7rem;
+  }
+  .contain-text, .carousel {
+      flex: 1 1 600px;
+  }
+  .contain-text {
+      width: 10%;
+  }
+  .contain-text div h2 {
+      font-size: 2.5rem;
+      text-align: center;
+  }
+  .contain-text p {
+      font-size: 2.3rem;
+      text-align: center;
+  }
+  .btn-find-out-more {
+      width: 70%;
+  }
+}
