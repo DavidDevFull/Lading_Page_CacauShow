@@ -1,3 +1,5 @@
+## OBSERVAÇÃO: Este é um repositório que ainda está em construção, portanto se houver algo que possa colaborar ou sugerir, por favor faça através de Pull Request ou Issues. Obrigado!
+
 # 🍫 Cacau Show Landing Page
 
 Bem-vindo à **Cacau Show Landing Page**! Este é um projeto de página inicial moderna e responsiva, desenvolvido para promover os produtos de chocolate da marca Cacau Show, com um design atrativo e funcionalidades interativas.
